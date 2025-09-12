@@ -1,3 +1,7 @@
+/*
+Marcio Lemos de Paiva - Matricula 202507333488
+Desafio Super Trunfo - Nivel Novato
+*/
 #include <stdio.h>
 #include <string.h>
 
