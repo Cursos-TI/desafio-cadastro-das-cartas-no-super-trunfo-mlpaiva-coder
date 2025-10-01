@@ -1,6 +1,6 @@
 /*
 Marcio Lemos de Paiva - Matricula 202507333488
-Desafio Super Trunfo - Nivel Aventureiro
+Desafio Super Trunfo - Desenvolvendo a logica - Nivel Novato
 */
 
 #include <stdio.h>
@@ -88,14 +88,12 @@ int main(){
     strcat(CodConc2, Codigo2);
     printf("Carta 2:\n Estado: %s\n Codigo: %s\n Nome da Cidade: %s\n Populacao: %d\n Area: %.2f km2\n PIB: %.2f bilhoes de reais\n Numero de pontos turisticos: %d\n Densidade populacional: %.2f hab/km2\n PIB per capta: %.2f reais\n Super Poder: %.2f\n\n\n", Estado2, CodConc2, Cidade2, Populacao2, Area2, Pib2, PontosTuristicos2, DensPop2, PIBPerCapta2, SuperPoder2);
 
-    printf("Comparacao de Cartas:\n");
-    printf("Populacao: Carta 1 venceu (%d)\n", Populacao1 > Populacao2);
-    printf("Area: Carta 1 venceu (%d)\n", Area1 > Area2);
-    printf("PIB: Carta 1 venceu (%d)\n", Pib1 > Pib2);
-    printf("Pontos Turisticos: Carta 1 venceu (%d)\n", PontosTuristicos1 > PontosTuristicos2);
-    printf("Densidade Populacional Carta 1 venceu, (%d)\n", DensPop1 < DensPop2);
-    printf("PIB Per Capta: Carta 1 venceu (%d)\n", PIBPerCapta1 > PIBPerCapta2);
-    printf("Super Poder: Carta 1 venceu (%d)\n", SuperPoder1 > SuperPoder2);
-
+    printf("Comparacao de Cartas (Area):\n");
+    if (Area1 > Area2){
+        printf("A carta 1 tem a area de %.2F m2 e a carta 2 tem a area de %.2F m2, portanto a Carta 1 Venceu\n", Area1, Area2);
+    }else{
+        printf("A carta 1 tem a area de %.2F m2 e a carta 2 tem a area de %.2F m2, portanto a Carta 2 Venceu\n", Area1, Area2);
+    }
+    
     return 0;
 }
